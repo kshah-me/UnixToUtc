@@ -1,0 +1,11 @@
+import datetime
+
+def unix_to_utc(unixtime):
+    utc_time= datetime.datetime.utcfromtimestamp(int(unixtime)).strftime('%Y-%m-%d %H:%M:%S')
+    return utc_time
+
+
+print(unix_to_utc("1284105682"))
+
+
+
