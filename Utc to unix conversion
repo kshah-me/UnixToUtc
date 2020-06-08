@@ -1,0 +1,8 @@
+import datetime
+
+def  UTC_to_Unix(utctime):
+    dt = datetime.datetime.strptime(utctime, '%Y-%m-%dT%H:%M:%S.%f%z')
+    ut = dt.timestamp()
+    return ut
+
+print(UTC_to_Unix('2019-01-24T18:15:57.345Z'))
